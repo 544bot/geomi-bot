@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "cheerio-httpcli": "^0.7.2",
+    "discord.js": "^11.3.2",
+    "node-cron": "^1.2.1"
+  }
+}
