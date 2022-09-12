@@ -21,10 +21,6 @@ if (!fs.existsSync('baloney01.txt')) {
 if (!fs.existsSync('baloney02.txt')) {
     fs.writeFileSync('baloney02.txt', '\ufeff' + '헛소리 반응을 적어주세요.', { encoding: 'utf8' });
 }
-if (!fs.existsSync('channels.txt')) {
-    fs.writeFileSync('channels.txt', '\ufeff' + '거미가 무료게임을 알려줄 체널 ID를 적어주세요.', { encoding: 'utf8' });
-}
-var chat_channel = fs.readFileSync('channels.txt').toString().replace('\ufeff', "")
 
 SpiderBot.on('message', msg => {
 
@@ -91,6 +87,8 @@ SpiderBot.on('message', msg => {
     }
 });
 
+/*
+
 cron.schedule('*/3 * * * *', function () {
     var url = 'https://twitter.com/freegame_kr';
     var param = {};
@@ -115,5 +113,7 @@ cron.schedule('*/3 * * * *', function () {
         }
     });
 });
+
+*/
 
 SpiderBot.login(token_string);
